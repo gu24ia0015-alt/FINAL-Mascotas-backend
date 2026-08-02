@@ -45,6 +45,14 @@ class Direccion(models.Model):
 
     def __str__(self):
         return f"{self.calle} {self.numero}, {self.ciudad}"
+    
+    
+    class Meta:
+        verbose_name = "Dirección"
+        verbose_name_plural = "Direcciones"
+
+    def __str__(self):
+        return f"{self.calle} {self.numero}, {self.ciudad}"
 
 
 class Especie(models.Model):

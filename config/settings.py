@@ -132,3 +132,15 @@ STATIC_URL = 'static/'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
 ]
+
+
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Admin Tienda de Mascotas",
+    "site_header": "Tienda de Mascotas",
+    "site_brand": "🐾 Mascotas Admin",
+    "welcome_sign": "Bienvenido al panel de administración",
+    "copyright": "Proyecto Final",
+    "show_sidebar": True,
+    "navigation_expanded": True,
+}
