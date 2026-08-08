@@ -99,6 +99,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
 ]
 
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.onrender\.com$",
+]
+
 JAZZMIN_SETTINGS = {
     "site_title": "Admin Tienda de Mascotas",
     "site_header": "Tienda de Mascotas",
