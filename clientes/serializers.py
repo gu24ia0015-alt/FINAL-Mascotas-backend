@@ -1,6 +1,17 @@
 from rest_framework import serializers
 from .models import Cliente, Mascota
+from .models import Especie
+from .models import Direccion
 
+class DireccionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Direccion
+        fields = '__all__'
+
+class EspecieSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Especie
+        fields = '__all__'
 
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:

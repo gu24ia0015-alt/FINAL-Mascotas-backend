@@ -2,6 +2,16 @@ from rest_framework import viewsets, filters
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Producto, Pedido
 from .serializers import ProductoSerializer, PedidoSerializer
+from .models import Categoria, Proveedor
+from .serializers import CategoriaSerializer, ProveedorSerializer
+
+class CategoriaViewSet(viewsets.ModelViewSet):
+    queryset = Categoria.objects.all()
+    serializer_class = CategoriaSerializer
+
+class ProveedorViewSet(viewsets.ModelViewSet):
+    queryset = Proveedor.objects.all()
+    serializer_class = ProveedorSerializer
 
 
 class ProductoViewSet(viewsets.ModelViewSet):
